@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="/images/logo1.png">
+        </div>
+        <div id="menu">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <!-- <div id="menubtn"><i class="fa-solid fa-bars"></i></div> -->
+        <div id="menubtn">
+            <img src="images/menu-icon.png" id="bar">
+        </div>
+    </header>
+    <section id="hero-image">
+        <h1>Beauty Salon</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="btn">
+            <a href="#"><span></span>Find Us</a>
+            <a href="#"><span></span>Read more</a>
+        </div>
+
+    </section>
+    <section id="features">
+        <div class="feature-text">
+        <p>Features</p>
+        <h1>Why Choose Us</h1></div>
+    </section>
+    <script>
+        var menubtn=document.getElementById("menubtn")
+        var menu=document.getElementById("menu")
+        var bar=document.getElementById("bar")
+
+        menu.style.right = "-250px"
+
+        menubtn.onclick = function(){
+            if (menu.style.right == "-250px"){
+                menu.style.right = "0";
+                bar.src = "images/close-icon.jpg";
+            }else{
+                menu.style.right = "-250px";
+                bar.src = "images/menu-icon.png";
+            }
+
+        }
+    </script>
+</body>
+</html>
