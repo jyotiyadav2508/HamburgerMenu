@@ -8,7 +8,6 @@ header {
     justify-content: space-between;
     height: 100px;
     background-color: #007367;
-    /* background-color: red; */
     position: sticky;
     top: 0;
     z-index: 5;
@@ -16,9 +15,10 @@ header {
 
 #logo img {
     padding-left: 30px;
-    padding-top: 10px;
-    height: 80px;
-    width: 100px;
+    padding-top: 15px;
+    height: 70px;
+    width: 90px;
+    border-radius: 50%;
 
 }
 
@@ -64,7 +64,7 @@ header {
 }
 
 #hero-image {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url("/images/background.jpg") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url("/images/salon.webp") no-repeat;
     background-position: center;
     background-size: cover;
     height: 80vh;
