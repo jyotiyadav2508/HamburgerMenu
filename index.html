@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <title>Responsive Navbar</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div id="logo">
-            <img src="/images/logo1.png">
+            <img src="images/logo1.png" alt="Salon logo">
         </div>
         <div id="menu">
             <ul>
@@ -22,7 +24,7 @@
         </div>
         <!-- <div id="menubtn"><i class="fa-solid fa-bars"></i></div> -->
         <div id="menubtn">
-            <img src="images/menu-icon.png" id="bar">
+            <img src="images/menu-icon.png" id="bar" alt="menu bar icon">
         </div>
     </header>
     <section id="hero-image">
@@ -36,21 +38,22 @@
     </section>
     <section id="features">
         <div class="feature-text">
-        <p>Features</p>
-        <h1>Why Choose Us</h1></div>
+            <p>Features</p>
+            <h1>Why Choose Us</h1>
+        </div>
     </section>
     <script>
-        var menubtn=document.getElementById("menubtn")
-        var menu=document.getElementById("menu")
-        var bar=document.getElementById("bar")
+        var menubtn = document.getElementById("menubtn")
+        var menu = document.getElementById("menu")
+        var bar = document.getElementById("bar")
 
         menu.style.right = "-250px"
 
-        menubtn.onclick = function(){
-            if (menu.style.right == "-250px"){
+        menubtn.onclick = function() {
+            if (menu.style.right == "-250px") {
                 menu.style.right = "0";
                 bar.src = "images/close-icon.jpg";
-            }else{
+            } else {
                 menu.style.right = "-250px";
                 bar.src = "images/menu-icon.png";
             }
@@ -58,4 +61,5 @@
         }
     </script>
 </body>
+
 </html>
